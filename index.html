@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sheldon's Table design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="container">
+          <h3 class="text-center">Switch Media Admin Users</h3>
+          <section class="table-wrapper">
+            <section class="table-control">
+              <button id="reset" class="btn btn-default"><span class="glyphicon glyphicon-refresh">Rest</span></button>
+              <div class="input-group search-bar">
+                <span class="input-group-addon" id="sizing-addon2">
+                  <span class="glyphicon glyphicon-search"></span>
+                </span>
+                <input id='search-input' type="text" class="form-control" placeholder="Search keywords...">
+              </div>
+            </section>
+            <table id="users-table" class="table">
+              <tr class="table-head-row"></tr>
+            </table>
+            <div class="btn-group pull-right">
+              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                <span id="result-per-page">10</span> Result Per Page <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="pagination-size">5</a></li>
+                <li><a href="#" class="pagination-size">10</a></li>
+              </ul>
+            </div>
+          </section>
+          <nav>
+            <ul class="pager">
+              <li><a href="#" class="pagination-link" id="previous">Previous</a></li>
+              Page <span id="currentPage"></span> of <span id="maxPage"></span>
+              <li><a href="#" class="pagination-link" id="next" >Next</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="userDetail" tabindex="-1" role="dialog" aria-labelledby="usersDetail">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">User Detail</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row data-row">
+                  <div class="col-xs-3">ID: </div>
+                  <div class="col-xs-9"><span id="user-user_id"></span></div>
+                </div>
+                <div class="row data-row">
+                  <div class="col-xs-3">First name:</div>
+                  <div class="col-xs-9"><span id="user-first_name"></span></div>
+                </div>
+                <div class="row data-row">
+                  <div class="col-xs-3">Last name:</div>
+                  <div class="col-xs-9"><span id="user-last_name"></span></div>
+                </div>
+                <div class="row data-row">
+                  <div class="col-xs-3">Email: </div>
+                  <div class="col-xs-9"><span id="user-email"></span></div>
+                </div>
+                <div class="row data-row">
+                  <div class="col-xs-3">Role: </div>
+                  <div class="col-xs-9"><span id="user-role"></span></div>
+                </div>
+                <div class="row data-row">
+                  <div class="col-xs-3">Department: </div>
+                  <div class="col-xs-9"><span id="user-department"></span></div>
+                </div>
+                <div class="row data-row">
+                  <div class="col-xs-3">Date of birth: </div>
+                  <div class="col-xs-5"><span id="user-dob"></span></div>
+                  <div class="col-xs-2">Age: </div>
+                  <div class="col-xs-2"><span id="user-age"></span></div>
+                </div>
+                <div class="row data-row">
+                  <div class="col-xs-3">Address: </div>
+                  <div class="col-xs-9"><span id="user-street_address_1"></span></div>
+                </div>
+                <div class="row data-row">
+                  <div class="col-xs-9 col-xs-push-3"><span id="user-street_address_2"></span></div>
+                </div>
+                <div class="row data-row">
+                  <div class="col-xs-9 col-xs-push-3">
+                    <span id="user-suburb"></span>
+                    <span id="user-state"></span>
+                    <span id="user-postcode"></span>
+                    <span id="user-country"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Other action</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

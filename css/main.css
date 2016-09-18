@@ -1,0 +1,40 @@
+.table-wrapper {
+  background: #5D8CAE;
+  padding: 10px 25px 50px 25px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+.table {
+  background-color: #fff;
+  border-radius: 4px;
+}
+.table>tbody>tr>th {
+  border-top: none;
+}
+.table>tbody>tr>td {
+  padding: 8px 15px;
+}
+.table-control {
+  padding: 20px 0;
+}
+.search-bar {
+  float: right;
+  width: 200px;
+}
+.table-header {
+  line-height: 20px;
+  font-size: 16px;
+  padding: 10px 15px !important;
+  cursor: pointer;
+}
+.table-row:hover {
+  background: #eee;
+}
+.order-icon {
+  color: #999;
+  top: 6px;
+  font-weight: lighter;
+}
+.data-row {
+  margin: 4px 12px;
+}
